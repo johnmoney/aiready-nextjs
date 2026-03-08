@@ -116,31 +116,31 @@ export default function AboutPage() {
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
-      <section className="bg-gradient-to-br from-primary to-accent2 px-4 py-16 text-light-text sm:px-6">
-        <div className="mx-auto max-w-4xl text-center">
-          <i className="fa-solid fa-quote-left text-6xl text-white/30 mb-6" aria-hidden="true" />
-          <blockquote className="font-heading text-2xl font-medium leading-relaxed">
-            “Students today are making major and career decisions in a world that is changing faster than our advising systems were designed for.
-            <br /><br />
-            The goal of the AI Ready Institute is to help students develop the judgment needed to navigate that uncertainty thoughtfully.”
-          </blockquote>
-          <p className="mt-8 text-xl font-semibold">
-            Karina Money
-          </p>
-          <p className="text-lg text-white/80">
-            Founder, AI Ready Institute
-          </p>
-        </div>
-      </section>
+            <section className="bg-gradient-to-br from-primary to-accent2 px-4 py-6">
+              <div className="mx-auto max-w-4xl text-center">
+                <i className="fa-solid fa-quote-left text-6xl text-white/30 mb-6" aria-hidden="true" />
+                <blockquote className="font-heading text-2xl font-medium leading-relaxed">
+                  “Students today are making major and career decisions in a world that is changing faster than our advising systems were designed for.
+                  <br /><br />
+                  The goal of the AI Ready Institute is to help students develop the judgment needed to navigate that uncertainty thoughtfully.”
+                </blockquote>
+                <p className="mt-8 text-xl font-semibold">
+                  Karina Money
+                </p>
+                <p className="text-lg text-white/80">
+                  Founder, AI Ready Institute
+                </p>
+              </div>
+            </section>
 
           </div>
           <div>
             <Pill
               title="Founder"
               icon="fa-user-tie"
-              accentVar="accent2"
+              bg="accent2"
             />
-            <h2 className="mt-6 font-heading text-3xl font-bold text-dark-text">
+            <h2 className="font-heading text-3xl font-bold text-dark-text">
               Karina Money, EdD
             </h2>
             <p className="mt-4 text-gray-text">
