@@ -117,7 +117,7 @@ export default function ServicesPage() {
               <Pill
                 title="For Schools & Colleges"
                 icon="fa-people-group"
-                accentVar="accent2"
+                bg="accent2"
               />
               <h2 className="font-heading text-3xl font-bold text-dark-text">
                 AI Readiness & Advising Risk Review
@@ -169,7 +169,7 @@ export default function ServicesPage() {
             <Pill
               title="The Challenge"
               icon="fa-chart-line"
-              accentVar="accent2"
+              bg="accent2"
             />
             <h2 className="font-heading text-3xl font-bold text-dark-text">
               For Students & Families
