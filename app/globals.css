@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Live site CSS variables (https://johnmoney.github.io/aiready/) */
+:root {
+  /* Colors */
+  --primary-color: #00509e;
+  --accent1-color: #3aafa9;
+  --accent2-color: #3aafa9;
+  --accent3-color: #ff6f61;
+  --accent4-color: #8c9eff;
+  --dark-text-color: #222222;
+  --gray-text-color: #767676;
+  --light-text-color: #ffffff;
+  --dark-border-color: #333333;
+  --light-border-color: #e8ebf1;
+  --dark-background-color: #1b1b1b;
+  --light-background-color: #f5f9ff;
+  --medium-background-color: #d9e8ff;
+  /* Button */
+  --button-padding-x: 16px;
+  --button-padding-y: 8px;
+  --button-rounded-radius: 8px;
+  --primary-button-text-color: #ffffff;
+  --primary-button-hover-bg-color: #003f7d;
+  --primary-button-hover-text-color: #ffffff;
+  --secondary-button-bg-color: #fdcb57;
+  --secondary-button-text-color: #333333;
+  --secondary-button-hover-bg-color: #faa22d;
+  --secondary-button-hover-text-color: #333333;
+  /* Font families (set by next/font in layout) */
+  --font-family-body: var(--font-nunito), ui-sans-serif, system-ui, sans-serif;
+  --font-family-heading: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family-body);
+    color: var(--dark-text-color);
+    background: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-family-heading);
+  }
+}
+
+/* Theme color utilities – fallbacks so they apply even if Tailwind doesn't emit them */
+@layer utilities {
+  .bg-primary {
+    background-color: var(--primary-color);
+  }
+  .hover\:bg-primary-hover:hover {
+    background-color: var(--primary-button-hover-bg-color);
+  }
+  .text-primary {
+    color: var(--primary-color);
+  }
+  .border-primary {
+    border-color: var(--primary-color);
+  }
+  .bg-accent1 {
+    background-color: var(--accent1-color);
+  }
+  .bg-accent2 {
+    background-color: var(--accent2-color);
+  }
+  .bg-accent3 {
+    background-color: var(--accent3-color);
+  }
+  .bg-accent4 {
+    background-color: var(--accent4-color);
+  }
+  .text-accent2 {
+    color: var(--accent2-color);
+  }
+  .border-accent2 {
+    border-color: var(--accent2-color);
+  }
+  .bg-light-bg {
+    background-color: var(--light-background-color);
+  }
+  .bg-medium-bg {
+    background-color: var(--medium-background-color);
+  }
+  .text-dark-text {
+    color: var(--dark-text-color);
+  }
+  .text-gray-text {
+    color: var(--gray-text-color);
+  }
+  .border-light-border {
+    border-color: var(--light-border-color);
+  }
+  .font-5xl {
+    font-size: 3rem;
+    line-height: 3.25rem;    
+  }
+  .font-6xl {
+    font-size: 4rem;
+    line-height: 4.25rem;    
+  }
+  .bg-gradient-to-br {
+      background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+  .from-primary {
+    --tw-gradient-from: var(--primary-color);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, transparent);
+  }
+  .to-accent2 {
+    --tw-gradient-to: var(--accent2-color);
+  }
+}
