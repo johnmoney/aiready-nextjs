@@ -31,12 +31,6 @@ export default function ServicesPage() {
                 >
                   Schedule a Free Consultation
                 </Link>
-                <Link
-                  href="/contact"
-                  className="rounded-lg border-2 border-primary bg-transparent px-6 py-3 text-base font-medium text-primary hover:bg-primary hover:text-white"
-                >
-                  Get in Touch
-                </Link>
               </div>
               <p className="mt-4 flex items-center text-sm text-gray-text">
                 <i className="fa-solid fa-check-circle mr-2 text-accent2" aria-hidden="true" />
